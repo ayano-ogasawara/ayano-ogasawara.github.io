@@ -69,7 +69,9 @@ nav > .tab {
 .tab:first-child::before,
 .tab:first-child:hover::before,
 .tab:hover::before,
-.tab.active::before {
+.tab.active::before,
+.tab.active + .tab::before,
+.tab:hover + .tab::before {
     background-color: transparent;
 }
 .tab:hover {
