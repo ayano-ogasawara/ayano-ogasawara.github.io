@@ -1,0 +1,85 @@
+header {
+    width: 100%;
+    position: relative;
+    background-color: black;
+    grid-template-rows: 1fr 1fr;
+}
+header::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-image: url(../assets//imgs/header-img_jungle.jpeg);
+    background-position: top center;
+    background-size: cover;
+}
+header > * {
+    z-index: 1;
+}
+
+/* TITLE HEADING */
+.title-heading {
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr repeat(3, auto);
+    align-items: center;
+}
+.title-heading h1 {
+    margin-left: 1rem;
+}
+.title-heading .icon {
+    margin: 0.5rem;
+}
+.title-heading .icon:last-child {
+    margin-right: 1rem;
+}
+
+
+/* NAV */
+nav  {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+nav > .tab {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    position: relative;
+    background-color: white;
+    height: 64%;
+    transition: all .3s;
+    border-top-right-radius: 1rem;
+    box-shadow: var(--box-shadow), inset 1px -13px 13px -18px rgba(0,0, 0, 0.5);
+}
+.tab::before {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+}
+.tab:first-child::before,
+.tab:first-child:hover::before,
+.tab:hover::before,
+.tab.active::before {
+    background-color: transparent;
+}
+.tab:hover {
+    cursor: pointer;
+    height: 100%;
+    border-top-left-radius: .3rem;
+    box-shadow: var(--box-shadow);
+}
+.tab.active {
+    height: 100%;
+    border-top-left-radius: .3rem;
+    box-shadow: var(--box-shadow);
+}

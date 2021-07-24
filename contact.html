@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Ayano Ogasawara</title>
+    <title>User Experience | Ayano Ogasawara</title>
+    <link rel="stylesheet" href="styles/grids.css" />
+    <style>
+        @import url(styles/reset.css);
+        @import url(styles/grids.css);
+        @import url(styles/header.css);
+        @import url(styles/variables.css);
+        @import url(styles/content.css);
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
 </head>
-
-<body>
-    <!-- modify this form HTML and place wherever you want your form -->
-
-    <form action="https://formspree.io/f/xwkabzow" method="POST">
-        <label>
-            Your name:
-            <input type="text" name="name">
-        </label>
-        <label>
-            Your email:
-            <input type="email" name="_replyto">
-        </label>
-        <label>
-            Your message:
-            <textarea name="message"></textarea>
-        </label>
-
-        <!-- your other form fields go here -->
-
-        <button type="submit">Send</button>
-    </form>
+<body class="grid-header-and-main">
+    <header class="grid-responsive-width">
+        <div class="title-heading">
+            <h1>Ayano Ogasawara</h1>
+            <a class="icon">ln</a>
+            <a class="icon">Be</a>
+            <a class="icon">Dr</a>
+        </div>
+        <nav>
+            <div class="tab active">Contact</div>
+            <div class="tab">About</div>
+            <div class="tab">Portfolio</div>
+            <div class="tab">Home</div>
+        </nav>
+    </header>
+    <main class="grid-responsive-width content-paper">
+        <div>
+            Content
+        </div>
+    </main>
+    <script type="module" src="main.js"></script>
 </body>
-
 </html>
+
+<!-- <a href="https://ayan0823.github.io/ux/resume/resume.html">My resume</a> -->
