@@ -12,6 +12,7 @@
         @import url(styles/header.css);
         @import url(styles/variables.css);
         @import url(styles/content.css);
+        @import url(styles/contact.css);
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
@@ -43,11 +44,31 @@
             <a href="https://ayan0823.github.io/ux/index.html" class="custom tab">Home</a>
         </nav>
     </header>
+
     <main class="grid-responsive-width content-paper">
-        <h1 style="margin-left: 1rem; margin-bottom: 2rem;">Let's work together</h1>
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <div>
-                <p style="margin-bottom: .5rem; text-align: left;">email me at :</p>
+        <div class="contact-page-grid">
+            <form onsubmit="sendemail(event)" class="contact-form">
+                <h1>Let's work together</h1>
+                <label for="contact-email-address">Email address:</label>
+                <input 
+                    id="contact-email-address"
+                    name="contact-email-address"
+                    type="email" 
+                    placeholder="your email address"
+                >
+                <label for="contact-message">Message:</label>
+                <textarea
+                    id="contact-message"
+                    name="contact-message"
+                    placeholder="your message goes here. Thank you for your interest"
+                    rows="10"
+                ></textarea>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+            <div class="mailto-link-container">
+                <p style="margin-bottom: .5rem; text-align: left;">Or email me at</p>
                 <p><a href="mailto:ayanoveli@gmail.com"><b>ayanoveli@gmail.com</b></a></p>
             </div>
         </div>
