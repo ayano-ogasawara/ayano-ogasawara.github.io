@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>User Experience | Ayano Ogasawara | Berlin > Portfolio</title>
+    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Experience | Ayano Ogasawara</title>
-    <link rel="stylesheet" href="styles/grids.css" />
+    <meta 
+        name="description" 
+        content="User Experience (UX) and User Interface (UI) solutions in Berlin by Ayano Ogasawara."
+    >
+    
+        <link rel="stylesheet" href="styles/grids.css" />
     <style>
         @import url(styles/variables.css);
         @import url(styles/reset.css);
         @import url(styles/grids.css);
         @import url(styles/header.css);
         @import url(styles/content.css);
-        @import url(styles/home.css);
+        @import url(styles/portfolio.css);
     </style>
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
@@ -21,7 +28,7 @@
 <body class="grid-header-and-main">
     <header class="grid-responsive-width">
         <div class="title-heading">
-            <h1>Ayano Ogasawara</h1>
+            <h1 class="content-h1">Ayano Ogasawara</h1>
             <a class="icon">ln</a>
             <a class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -38,30 +45,22 @@
             </a>
         </div>
         <nav>
-            <a href="https://ayan0823.github.io/ux/contact.html" class="custom tab">Contact</a>
-            <a href="https://ayan0823.github.io/ux/about.html" class="custom tab">About</a>
-            <a href="https://ayan0823.github.io/ux/portfolio.html" class="custom tab">Portfolio</a>
-            <a href="https://ayan0823.github.io/ux/index.html" class="tab active">Home</a>
+            <a href="http://localhost:3000/contact.html" class="custom tab">Contact</a>
+            <a href="http://localhost:3000/about.html" class="custom tab">About</a>
+            <a href="http://localhost:3000/portfolio.html" class="tab active">Portfolio</a>
         </nav>
     </header>
     <main class="grid-responsive-width content-paper">
-        <div class="grid-image-links">
-            <div class="aya-intro">
-                <h1 class="content-h1">Hello, I'm Ayano.</h1>
-                <p>I'm a UX designer located in Berlin, Germany. Previously worked as a junior project manager and hostel supervisor. I just graduated the certified UX designer course in CareeFoundry and looking for a creative team to join.</p>
-            </div>
-
-            <div class="work-btn-container">
-                <button onclick="tocontact()">Work together</button>
-            </div>
-            
-            <div class="image-as-link">
-                image 1
-            </div>
-            
-            <div class="image-as-link">
-                image 2
-            </div>
+        <div style="margin-bottom: 2rem;">
+            <b>All case-studies</b>
+        </div>
+        <div class="portfolio-content-grid">
+            <a href="./case-studies/danapay.html">
+                <img src="./assets/imgs/cover_danaPay.png" alt="case-study-dana-pay">
+            </a>
+            <a href="./case-studies/langarden.html">
+                <img src="./assets/imgs/cover_langarden.png" alt="case-study-langarden">
+            </a>
         </div>
     </main>
     <script type="module" src="main.js"></script>

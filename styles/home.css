@@ -6,6 +6,16 @@
     grid-gap: 1rem;
 }
 
+h1 {
+    margin-bottom: 2rem;
+    align-self: center;
+}
+.aya-intro p {
+    font-size: 2rem;
+    font-weight: thin;
+    line-height: 2;
+}
+
 .work-btn-container {
     margin-right: 1rem;
     display: flex;
@@ -16,13 +26,13 @@
     font-size: 1.35rem;
     padding: 1rem 2rem;
     background-color: white;
-    border: 1px solid var(--black);
+    border: 1px solid var(--black-text);
     transition: all .3s;
     border-radius: .25rem;
 }
 .work-btn-container button:hover {
     cursor: pointer;
-    background-color: var(--black);
-    color: var(--c-d);
-    border-color: var(--c-d);
+    background-color: var(--black-text);
+    color: var(--blue);
+    border-color: var(--blue);
 }

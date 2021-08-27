@@ -3,8 +3,14 @@ html {
     --box-shadow: 5px 2px 16px -4px rgba(0,0, 0, 0.5);
     --box-shadow-inset: inset 1px -13px 13px -18px rgba(0,0, 0, 0.5);
     --black: #292929;
-    --b-l: #595959;
-    --c-d: #00FDC7;
-    --c-l: #ebfbfb;
-    --background-color: #FBFBFB;
+    --grey: #595959;
+    --dark-blue: #9CBAC9;
+    --blue: #8fb2c1;
+    --light-blue: #ebfbfb;
+
+    --black-text: var(--black);
+    --grey-text: var(--grey);
+    --cta: var(--dark-blue);
+    --decoration-color: var(--blue);
+    --bg-col: var(--light-blue);
 }

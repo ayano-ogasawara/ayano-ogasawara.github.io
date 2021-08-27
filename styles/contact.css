@@ -28,13 +28,13 @@
 .contact-form input,
 .contact-form textarea {
     padding: .5rem;
-    border: 1px solid var(--black);
+    border: 1px solid var(--black-text);
     border-radius: .5rem;
     font-family: inherit;
 }
 .contact-form button {
-    background-color: var(--c-d);
-    color: var(--black);
+    background-color: var(--blue);
+    color: var(--black-text);
     margin-top: 2rem;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -43,7 +43,7 @@
     margin: 1rem;
     padding: 3rem;
     border-radius: .5rem;
-    background-color: var(--c-l);
+    background-color: var(--light-blue);
     display: flex;
     flex-direction: column;
     justify-content: center;

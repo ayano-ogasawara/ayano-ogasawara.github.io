@@ -34,7 +34,7 @@ section.intro::before {
     position: absolute;
     top: 0; left: 7.5rem;
     border-radius: .6rem;
-    background-color: var(--c-l);
+    background-color: var(--light-blue);
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -57,9 +57,13 @@ section.intro .intro-summary {
 section.intro .intro-summary h1 {
     font-size: 3em;
 }
-
 section.chapter h2 {
     margin-bottom: 1.5rem;
+}
+section.chapter .line-bullet-points {
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-rows: max-content;
 }
 
 @media screen and (max-width: 666px) { /* We're all sinners! */
