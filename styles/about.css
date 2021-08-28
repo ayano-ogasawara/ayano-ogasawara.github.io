@@ -19,24 +19,27 @@ section.intro .intro-summary {
     grid-gap: 1rem;
 }
 section.intro {
+    overflow: visible;
+    /* overflow: hidden; */
     margin-right: 0;
-    overflow: hidden;
     position: relative;
     display: grid;
     grid-template-columns: 15rem 1fr;
     grid-auto-rows: min-content;
     grid-gap: 4rem;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 section.intro::before {
     content: " ";
     position: absolute;
-    top: 0; left: 7.5rem;
+    top: 0;
+    left: 0;
+    margin-left: 7.5rem;
     border-radius: .6rem;
-    background-color: var(--light-blue);
+    background-color: var(--blue);
     height: 100%;
-    width: 100%;
+    width: calc(100% - 7.5rem);
     z-index: -1;
 }
 
@@ -52,10 +55,34 @@ section.intro .intro-thumbnail {
 
 section.intro .intro-summary {
     padding-right: 1rem;
+    overflow: visible;
 }
 
 section.intro .intro-summary h1 {
     font-size: 3em;
+}
+section.intro .intro-summary a {    
+    text-decoration: none;
+    margin-right: 1rem;
+    justify-self: end;
+}
+section.intro .intro-summary button {
+    width: fit-content;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    border: 2px solid var(--cta);
+    color: var(--cta);
+    background-color: white;
+    border-radius: 0;
+    position: relative;
+    top: 100%;
+}
+section.intro .intro-summary button svg {
+    margin-right: 1rem;
+}
+section.intro .intro-summary button svg path {
+    fill: var(--cta);
 }
 section.chapter h2 {
     margin-bottom: 1.5rem;

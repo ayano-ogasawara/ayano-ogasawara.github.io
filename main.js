@@ -1,7 +1,7 @@
 const x = 'NEVER say "console" 3 times in front of a mirror'
 console.log(x)
 window.tocontact = function(){
-    window.location.assign('http://localhost:3000/contact.html')
+    window.location.assign('http://ayan0823.github.io/ux/contact.html')
 }
 window.sendemail = function(e){
     e.preventDefault()

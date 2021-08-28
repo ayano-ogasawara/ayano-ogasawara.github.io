@@ -4,7 +4,8 @@ html {
     --box-shadow-inset: inset 1px -13px 13px -18px rgba(0,0, 0, 0.5);
     --black: #292929;
     --grey: #595959;
-    --dark-blue: #9CBAC9;
+    /* --dark-blue: #9CBAC9; */
+    --dark-blue: #00334b;
     --blue: #8fb2c1;
     --light-blue: #ebfbfb;
 
