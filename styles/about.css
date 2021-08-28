@@ -20,7 +20,6 @@ section.intro .intro-summary {
 }
 section.intro {
     overflow: visible;
-    /* overflow: hidden; */
     margin-right: 0;
     position: relative;
     display: grid;
@@ -110,5 +109,8 @@ section.chapter .line-bullet-points {
     }
     section.intro .intro-summary h1 {
         text-align: center;
+    }
+    section.intro .intro-summary button {
+        top: 0;
     }
 }
