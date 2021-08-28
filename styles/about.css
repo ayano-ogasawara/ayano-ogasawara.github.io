@@ -6,10 +6,6 @@
     grid-gap: 2rem;
 }
 
-.about-content-grid > section {
-    margin: 0 1rem;
-}
-
 section.chapter,
 section.intro .intro-summary {
     align-self: center;
@@ -106,6 +102,9 @@ section.chapter .line-bullet-points {
     }
     section.intro .intro-thumbnail {
         margin: auto
+    }
+    section.intro .intro-summary {
+        padding-right: 0;
     }
     section.intro .intro-summary h1 {
         text-align: center;
