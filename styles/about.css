@@ -79,8 +79,16 @@ section.intro .intro-summary button svg {
 section.intro .intro-summary button svg path {
     fill: var(--cta);
 }
+section.chapter .line-bullet-points span {
+    line-height: 3rem;
+}
+section.chapter p {
+    line-height: 1.5rem;
+}
 section.chapter h2 {
     margin-bottom: 1.5rem;
+    text-decoration: underline 6px var(--decoration-color);
+    text-underline-offset: .4em;
 }
 section.chapter .line-bullet-points {
     display: grid;

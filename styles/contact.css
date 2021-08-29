@@ -42,12 +42,15 @@
 .mailto-link-container {
     margin: 1rem;
     padding: 3rem;
-    border-radius: .5rem;
-    background-color: var(--light-blue);
+    /* border-radius: .5rem; */
+    background-color: var(--decoration-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.mailto-link-container a {
+    color: inherit
 }
 
 @media screen and (max-width: 768px) {

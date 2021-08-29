@@ -1,7 +1,7 @@
 const x = 'NEVER say "console" 3 times in front of a mirror'
 console.log(x)
 window.tocontact = function(){
-    window.location.assign('http://ayano-ogasawara.github.io/ux/contact.html')
+    window.location.assign('http://ayano-ogasawara.github.io/contact.html')
 }
 window.sendemail = function(e){
     e.preventDefault()
