@@ -8,7 +8,8 @@
     align-items: center;
     justify-content: center;
 }
-.interactive-prototype-container iframe {
-    object-fit: contain;
-    object-position: 50% 50%;
+.interactive-prototype-container > * {
+    flex-grow: none;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
