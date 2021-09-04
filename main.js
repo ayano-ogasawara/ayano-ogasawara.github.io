@@ -15,3 +15,7 @@ window.sendemail = function(e){
     _a.setAttribute('href', `mailto:ayanoveli@gmail.com?subject=${email.subject}&body=${email.body}`)
     _a.dispatchEvent(_clickEvent)
 }
+
+window.openIframeFullScreen = function(e){
+    document.getElementById('fs-iframe').requestFullscreen();
+}

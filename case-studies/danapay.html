@@ -11,7 +11,7 @@
             content="User Experience (UX) and User Interface (UI) solutions in Berlin by Ayano Ogasawara."
         >
         
-            <link rel="stylesheet" href="styles/grids.css" />
+            <link rel="stylesheet" href="../styles/grids.css" />
         <style>
             @import url(../styles/variables.css);
             @import url(../styles/reset.css);
@@ -62,8 +62,20 @@
                 <img class="img-fullwidth" src="../assets/imgs/case-study_danaPay/2_Scenario.png" alt="danapay-design">
                 <img class="img-fullwidth" src="../assets/imgs/case-study_danaPay/3_information-design_&_user-flow.png" alt="danapay-information-design">
                 <img class="img-fullwidth" src="../assets/imgs/case-study_danaPay/5_testing_behance.png" alt="danapay-testing">
-                <iframe width="442" height="935" src="//invis.io/EG115ADCBAYC" frameborder="0" allowfullscreen></iframe>
+                <div class="interactive-prototype-container">
+                    <!-- height="935" -->
+                    <button onclick="openIframeFullScreen(event)">FULL SCREEN</button>
+                    <iframe width="442" height="935"
+                        id="fs-iframe"  
+                        src="//invis.io/EG115ADCBAYC" 
+                        frameborder="0" 
+                        allowfullscreen="true"
+                        allow="fullscreen"
+                    ></iframe>
+                    <!-- <iframe width="100%" height="100%" src="//invis.io/EG115ADCBAYC" frameborder="0" allowfullscreen></iframe> -->
+                </div>
             </div>
         </main>
+        <script type="module" src="../main.js"></script>
     </body>
 </html>
